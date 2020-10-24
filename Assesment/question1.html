@@ -1,0 +1,71 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Example 1</title>
+    <h1 align="center">ENQUIRY FORM</h1>
+    <style>
+        body{
+            background-color: #b2deec;
+            color: WHITE;
+        }
+        
+       
+       
+    </style>
+</head>
+<body>
+    
+    <section>
+        <form align="center">
+            <p>ENTER YOUR NAME: <input type="text" placeholder="Enter the Name" id="empName"></p>    
+            <p>ENTER EMAIL-ID : <input type="email" placeholder="Enter the e-mail" id="empEmail"></p>
+            <p>ENTER PHONE NUMBER : <input type="tel" placeholder="Enter Phone number" id="empPhone"></p>
+                       
+            <p>GENDER : <select id="empQualification">
+                <option>FEMALE</option>
+                <option>MALE</option>
+            </select></p>
+
+            <p>
+                Billing to:<input type="radio" name="billoc">Home<input type="radio" name="billoc">Office
+            </p>
+            <p>
+                Other Related Queries:
+                <input type="Checkbox">SENIOR
+                <input type="Checkbox">TEEN
+                <input type="Checkbox">ADULT
+                <input type="Checkbox">CHILD
+                
+            </p>
+            
+            
+            <p>
+		<label for="date of journey">date of journey:</label>
+		<input type="date" id="journey name="date of journey">
+
+            </p>
+	<p>
+		Rate this page
+                <input type="range" min="1" max="10" step="1/">
+            </p>
+		
+	<div>
+	<button onclick="submit()" type="button">submit</button>
+	<script type="text">
+	function store()
+	{
+	var inputName=document.getElementById("name");
+	localStorge.setItem("Name",inputName.value);
+
+	var inputEmail-Id=document.getElementById("Email");
+	localStorge.setItem("Email-Id",inputEmail-Id.value);
+	
+	var inputPhoneNumber=document.getElementById("PhoneNumber");
+	localStorge.setItem("Phonenumber",inputPhonenumber.value);
+	}
+        </form>
+    </section>   
+    
+</body>
+</html>
